@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/edit_notes"
+        android:text="Edit"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="#00000000">
+
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/delete_notes"
+        android:text="Delete"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="#00000000">
+
+    </Button>
+
+</LinearLayout>

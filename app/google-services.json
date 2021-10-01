@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "905759089114",
+    "project_id": "fir-demoapp-88d53",
+    "storage_bucket": "fir-demoapp-88d53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905759089114:android:437871eee770fea66e60e3",
+        "android_client_info": {
+          "package_name": "com.example.notepadpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905759089114-k2j1t4buq67kghmv1rnpggi5hjt8ts2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.notepadpro",
+            "certificate_hash": "2b0fd3ccacbd24a004074446d565b90d35e4f161"
+          }
+        },
+        {
+          "client_id": "905759089114-k10bv96jgsv5dr15297pbh75qrt6kljl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAENx98x1D22BVlmP1F_ccT_S_B8hnInxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905759089114-k10bv96jgsv5dr15297pbh75qrt6kljl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

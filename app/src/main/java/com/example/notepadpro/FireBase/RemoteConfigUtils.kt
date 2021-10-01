@@ -15,14 +15,14 @@ object RemoteConfigUtils {
     var SHOW_MAINTAINANCE_TEXT = "SHOW_MAINTAINANCE_TEXT"
 
 
-    private lateinit var remoteConfig:FirebaseRemoteConfig
+    private var remoteConfig:FirebaseRemoteConfig
 
     init{
         remoteConfig = getFireBaseConfig()
     }
 
     private fun getFireBaseConfig(): FirebaseRemoteConfig {
-         val remoteConfig:FirebaseRemoteConfig = Firebase.remoteConfig
+         val remoteConfig= Firebase.remoteConfig
 
          val remoteConfigSettings:FirebaseRemoteConfigSettings = remoteConfigSettings {
              minimumFetchIntervalInSeconds =if(BuildConfig.DEBUG)
@@ -35,7 +35,6 @@ object RemoteConfigUtils {
 
         remoteConfig.apply {
             setConfigSettingsAsync(remoteConfigSettings)
-//            setDefaultsAsync()
             fetchAndActivate().addOnCompleteListener {
                 Log.d(TAG, "getFireBaseConfig: completed")
             }

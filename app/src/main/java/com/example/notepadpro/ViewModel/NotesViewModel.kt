@@ -9,7 +9,7 @@ import androidx.room.Room
 import com.example.notepadpro.Dao.NotesDAO
 import com.example.notepadpro.DataBase.NotesDB
 import com.example.notepadpro.Entity.Notes
-import com.example.notepadpro.Interfaces.DaggerDIComponent
+import com.example.notepadpro.NotePadProApplication
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -24,7 +24,7 @@ class NotesViewModel(application: Application) : AndroidViewModel(application) {
     var resultList:MutableLiveData<ArrayList<Notes>>?=MutableLiveData<ArrayList<Notes>>()
 
     init {
-        db = Room.databaseBuilder(application.applicationContext, NotesDB::class.java,"notes_table").build()
+        db = NotePadProApplication.applicationContext().notesdb
         notesDAO = db!!.notesDao()
     }
     

@@ -14,9 +14,9 @@ import androidx.core.os.bundleOf
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.notepadpro.Dagger.DaggerDIComponent
 import com.example.notepadpro.Entity.Notes
 import com.example.notepadpro.FireBase.RemoteConfigUtils
-import com.example.notepadpro.Interfaces.DaggerDIComponent
 import com.example.notepadpro.Interfaces.RecyclerViewClickListener
 import com.example.notepadpro.ViewModel.NotesViewModel
 import kotlinx.android.synthetic.main.fragment_first.*
